@@ -1,8 +1,10 @@
+{% load staticfiles %}
+
 <html>
 <head>
     <title>Medium Editor Test</title>
-    <link rel="stylesheet" href="./medium-editor/dist/css/medium-editor.css">
-    <link rel="stylesheet" href="./medium-editor/dist/css/themes/classivo.css"
+    <link rel="stylesheet" href="{% static '/medium-editor/dist/css/medium-editor.css' %}">
+    <link rel="stylesheet" href="{% static '/medium-editor/dist/css/themes/classivo.css' %}"
 </head>
 
 <body>
@@ -28,7 +30,7 @@
     peace and justice in the
     galaxy, to settle the conflict....</p>
 
-    <script src="../medium-editor/dist/js/medium-editor.js"></script>
+    <script src="{% static '/medium-editor/dist/js/medium-editor.js' %}"></script>
     <script>var editor = new MediumEditor('.editable');</script>
 
 
